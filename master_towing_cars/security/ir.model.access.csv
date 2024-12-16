@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cars_towing_user,cars.towing.user,model_cars_towing,base.group_user,1,1,1,1
+access_towing_driver_user,towing.driver.user,model_towing_driver,base.group_user,1,1,1,1

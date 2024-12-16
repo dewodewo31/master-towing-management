@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+    <!-- Inherit Sales Order Form -->
+    <record id="view_order_form_inherit_towing" model="ir.ui.view">
+      <field name="name">sale.order.form.inherit.towing</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='order_line']/tree" position="inside">
+          <field name="towing_id" string="Mobil Towing"/>
+          <field name="towing_name_and_plate" string="Jenis Towing dan Plat"/>
+          <field name="driver_name" string="Nama Driver"/>
+          <field name="employee_id" string="ID Karyawan"/>
+          <!-- Ganti job_id dengan employee_id -->
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
